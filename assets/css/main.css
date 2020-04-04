@@ -1,13 +1,14 @@
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-color: #EFEEEE;
+    overflow: hidden;
 }
 .wrap {
     height: 18.75em;
     width: 25em;
     background: #fff;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
@@ -104,30 +105,39 @@ input[type=submit] {
 :not(output):-moz-ui-invalid {
     box-shadow: none;
 }
-#label-logged {
+#label-logged,
+a {
     font-size: 1.7em;
     color: #333;
+    text-decoration: none;
+}
+a {
+    font-size: 1.4em;
 }
 #field-logged {
-    padding-top: 40px;
+    padding-top: 30px;
     text-align: center;
 }
+#field-reset {
+    text-align: center;
+    height: auto;
+}
 #field-logged input[type="checkbox"] {
-	display: none;
+    display: none;
 }
 #field-logged input[type="checkbox"] + label span {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     margin-right: 7px;
-	vertical-align: middle;
-	cursor: pointer;
+    vertical-align: middle;
+    cursor: pointer;
     border: 2px solid #333;
 }
-#field-logged input[type="checkbox"]:checked + label {
+#field-logged input[type="checkbox"] + label {
     cursor: pointer;
 }
-#field-logged input{type="checkbox"}:checked + label span div {
+#field-logged input[type="checkbox"]:checked + label span div {
     margin-left: 4px;
     width: 5px;
     height: 10px;
@@ -135,4 +145,3 @@ input[type=submit] {
     border-bottom: 2px solid #08B255;
     border-right: 2px solid #08B255;
 }
-input#inp_password { -webkit-text-security: square; }
