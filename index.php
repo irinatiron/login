@@ -33,6 +33,9 @@
             <input type="checkbox" id="logged-in" name="logged-in" value="logged">
             <label for="logged-in" id="label-logged"><span><div></div></span>Remember me</label>
         </div>
+        <div class="field" id="field-reset">
+            <a href="#">Trouble logging in?</a>
+        </div>
     </form>
     <script>
         function passVis() {
