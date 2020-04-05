@@ -1,12 +1,48 @@
+@font-face {
+  font-family: Bebas Neue Regular;
+  src: url("../fonts/BebasNeue-Regular.otf"); format("otf");
+       url("/fonts/BebasNeue-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: Bebas Neue Light;
+  src: url("../fonts/BebasNeue-Light.otf"); format("otf");
+       url("/fonts/BebasNeue-Light.ttf"); format("ttf");
+}
+@font-face {
+  font-family: Bebas Neue Bold;
+  src: url("../fonts/BebasNeue-Bold.otf"); format("otf");
+       url("/fonts/BebasNeue-Bold.ttf"); format("ttf");
+}
+@font-face {
+  font-family: Bebas Neue Book;
+  src: url("../fonts/BebasNeue-Book.otf"); format("otf");
+       url("/fonts/BebasNeue-Book.ttf"); format("ttf");
+}
+@font-face {
+  font-family: Bebas Neue Thin;
+  src: url("../fonts/BebasNeue-Thin.otf"); format("otf");
+       url("/fonts/BebasNeue-Thin.ttf"); format("ttf");
+}
 body {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue Regular', sans-serif;
     background-color: #EFEEEE;
     overflow: hidden;
+    color: #333;
+}
+h2 {
+    font-family: 'Bebas Neue Bold', sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #333;
 }
 .wrap {
     height: 18.75em;
     width: 25em;
-    background: #fff;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -14,6 +50,8 @@ body {
     text-transform: uppercase;
 }
 .field-label {
+    font-family: 'Bebas Neue Bold', sans-serif;
+    letter-spacing: 1px;
     display: block;
     font-size: 3em;
     transform: translateY(25px);
@@ -98,21 +136,19 @@ input[type=submit] {
     color: #fff;
     font-size: 3em;
     text-transform: uppercase;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue Bold', sans-serif;
     margin-top: 0.5em;
     cursor: pointer;
 }
 :not(output):-moz-ui-invalid {
     box-shadow: none;
 }
-#label-logged,
-a {
+#label-logged, h2, #reset-credential {
     font-size: 1.7em;
-    color: #333;
-    text-decoration: none;
+    font-family: 'Bebas Neue Book', sans-serif;
 }
-a {
-    font-size: 1.4em;
+#reset-credential {
+    font-size: 1.6em;
 }
 #field-logged {
     padding-top: 30px;
