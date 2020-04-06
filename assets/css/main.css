@@ -31,9 +31,9 @@ body {
 }
 h2 {
     font-family: 'Bebas Neue Bold', sans-serif;
-    position: absolute;
-    top: 10%;
-    left: 45%;
+    text-align: center;
+    width:500px;
+    margin: 70px auto;
     text-align: center;
 }
 a {
