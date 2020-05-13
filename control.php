@@ -9,13 +9,18 @@ $stmt->execute();
 $user = $stmt->get_result()->fetch_assoc();
 if (password_verify($_POST['inp_password'], $user['hash']))
 {   session_start();
-   
-    echo "valid!";
+ $_SESSION["user"] = $user['nick'];
+ $_SESSION['logged-in'] = true;
+ header('Location: home.php');
+ exit;
+ 
+ ?>
+<!-- <script> window.location.href = 'home.php';</script>-->
+<?php
+ 
 } else {
-    
     header("location: login.php"); 
 }
-
 mysqli_free_result($user);
 mysqli_close($cnn);
 //$test = password_hash('1234', PASSWORD_DEFAULT);
